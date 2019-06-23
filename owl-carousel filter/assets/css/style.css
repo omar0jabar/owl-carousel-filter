@@ -1,0 +1,70 @@
+.jo-owl-filter .jo-cats {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.jo-owl-filter .jo-cats .jo-cat {
+  padding: 10px 15px;
+  background-color: #34495e;
+  border-radius: 4px;
+  color: white;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition-duration: .3s
+}
+
+.jo-owl-filter .jo-cats .jo-cat:hover {
+  background-color: #567492;
+}
+
+.jo-owl-filter .jo-cats .jo-cat.selected {
+  background-color: #3178be;
+}
+
+
+.jo-owl-filter .jo-cats .jo-cat:last-child {
+  margin-right: 0
+}
+
+.jo-owl-filter .jo-cats .jo-cat:first-child {
+  margin-left: 0
+}
+
+.jo-owl-filter .jo-owl-carousel .item {
+  height: 300px;
+  border-radius: 8px
+}
+
+.jo-owl-filter .jo-owl-carousel .item.bg-blue {
+  background-color: #2980b9
+}
+
+.jo-owl-filter .jo-owl-carousel .item.bg-red {
+  background-color: #e74c3c
+}
+
+.jo-owl-filter .jo-owl-carousel .item.bg-green {
+  background-color: #27ae60
+}
+
+
+.jo-owl-filter .jo-carousel-box {
+  position: relative;
+  height: 300px;
+}
+
+.jo-owl-filter .jo-carousel-box .jo-owl-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: .6s
+}
+
+.jo-owl-filter .jo-carousel-box .jo-owl-carousel.show {
+  opacity: 1;
+  pointer-events: all
+}
