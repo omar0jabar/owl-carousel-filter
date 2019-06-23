@@ -32,24 +32,30 @@ $(document).ready(function () {
 
         var parent = $(this);
 
-        $(this).find(".jo-cats .jo-cat").click(function (e) { 
+        $(this).find(".jo-cats .jo-cat").click(function (e) {
             e.preventDefault();
             var idCat = $(this).attr("id");
             parent.find(".jo-cats .jo-cat").removeClass("selected");
             $(this).addClass("selected");
             parent.find(".jo-owl-carousel").removeClass("show");
 
-            parent.find(".jo-owl-carousel#"+idCat).addClass("show");
+            parent.find(".jo-owl-carousel#" + idCat).addClass("show");
 
 
         });
-        
+
 
 
     })
 
-    $(".jo-owl-filter .owl-carousel.jo-owl-carousel").owlCarousel({
-        margin: 15
+    $(".jo-owl-filter .owl-carousel.jo-owl-carousel.owl-1").owlCarousel({
+        margin: 15,
+        items: 4
+    });
+
+    $(".jo-owl-filter .owl-carousel.jo-owl-carousel.owl-2").owlCarousel({
+        margin: 15,
+        item: 3
     });
 
 
